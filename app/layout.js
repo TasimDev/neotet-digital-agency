@@ -1,6 +1,6 @@
-import { Inter } from 'next/font/google'
-import '@/app/ui/global.css';
-import Navbar from './ui/Navbar';
+
+import '@/app/ui/styles/style.css';
+import Navbar from './ui/Navbar/Navbar';
 import Footer from './ui/Footer';
 
 

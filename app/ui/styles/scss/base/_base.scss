@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    pointer-events: none;
+    object-fit: cover
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+::selection {
+    color: color(white);
+    background: color(black);
+}
