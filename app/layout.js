@@ -1,7 +1,7 @@
 
 import '@/app/ui/styles/style.css';
 import Navbar from './ui/Navbar/Navbar';
-import Footer from './ui/Footer';
+import Footer from './ui/Footer/Footer';
 import { raleway } from '@/app/ui/fonts';
 
 export const metadata = {

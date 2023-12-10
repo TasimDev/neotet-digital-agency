@@ -5,6 +5,11 @@
     padding-top: 4rem;
     position: absolute;
     width: 100%;
+
+    .icon {
+        color: #fff;
+    }
+
     &__container {
         display: flex;
         flex-direction: column;
@@ -126,7 +131,7 @@
                     border-radius: 50%;
                     transition: var(--transition);
 
-                    i {
+                    .icon {
                         font-size: 1.2rem;
                         color: color(white);
                         transition: var(--transition);
@@ -141,7 +146,7 @@
                     a {
                         background: color(white);
 
-                        i {
+                        .icon {
                             color: color(black);
                         }
                     }

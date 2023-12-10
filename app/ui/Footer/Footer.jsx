@@ -1,4 +1,5 @@
 import Link from "next/link"
+import FooterLink from "./footer-link"
 
 
 const Footer = () => {
@@ -24,11 +25,7 @@ const Footer = () => {
                 </div>
                 <div className="footer__socials">
                     <ul className="socials">
-                        <li><a href="#"><i className="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i className="fa-brands fa-behance"></i></a></li>
-                        <li><a href="#"><i className="fa-brands fa-dribbble"></i></a></li>
-                        <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#"><i className="fa-brands fa-facebook-f"></i></a></li>
+                        <FooterLink />
                     </ul>
                 </div>
             </div>

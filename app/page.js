@@ -12,8 +12,8 @@ export default function Home() {
         <h1>Reach <span className="thin">perfection</span> and create culture <br /> with <span className="thin">new
           generation</span> web products <br /> for determine the <span className="thin">future</span>. </h1> */}
 
-        <span className="text-gray">New Generation Web Agency. </span><br /><br /><br /><br />
-      
+        <span className="text-gray">New Generation Digital Agency </span><br /><br /><br /><br />
+
 
       </div>
     </main>

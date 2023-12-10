@@ -31,7 +31,6 @@ a {
 }
 
 img {
-  width: 100%;
   pointer-events: none;
   -o-object-fit: cover;
      object-fit: cover;
@@ -97,6 +96,10 @@ button {
   z-index: 6;
   /*Mobile and Table CSS*/
 }
+.header img {
+  width: auto;
+  height: auto;
+}
 .header__container {
   justify-content: space-between;
 }
@@ -120,6 +123,10 @@ button {
   width: 50px;
   transform: translateY(200%);
   transition: var(--transition);
+}
+.header__logo #logo img {
+  width: auto;
+  height: auto;
 }
 .header__logo:hover span {
   transform: translateY(-200%);
@@ -246,6 +253,9 @@ button {
 }
 
 /*==============Proccess================*/
+.proccess img {
+  width: 100%;
+}
 .proccess span {
   display: block;
   color: rgba(128, 128, 128, 0.699);
@@ -338,6 +348,9 @@ button {
   padding-top: 4rem;
   position: absolute;
   width: 100%;
+}
+.footer .icon {
+  color: #fff;
 }
 .footer__container {
   display: flex;
@@ -441,7 +454,7 @@ button {
   border-radius: 50%;
   transition: var(--transition);
 }
-.footer__socials .socials li a i {
+.footer__socials .socials li a .icon {
   font-size: 1.2rem;
   color: #fff;
   transition: var(--transition);
@@ -452,7 +465,7 @@ button {
 .footer__socials .socials li:hover a {
   background: #fff;
 }
-.footer__socials .socials li:hover a i {
+.footer__socials .socials li:hover a .icon {
   color: rgb(17, 17, 17);
 }
 

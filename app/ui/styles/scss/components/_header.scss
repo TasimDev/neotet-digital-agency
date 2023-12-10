@@ -1,5 +1,10 @@
 /*==============HEADER=============*/
 .header {
+    img {
+        width: auto;
+        height: auto;
+    }
+
     padding: 16px;
     width: 100%;
     height: auto;
@@ -33,6 +38,11 @@
             width: 50px;
             transform: translateY(200%);
             transition: var(--transition);
+
+            img {
+                width: auto;
+                height: auto;
+            }
         }
 
         &:hover {
