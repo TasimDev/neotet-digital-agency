@@ -31,8 +31,7 @@ a {
 }
 
 img {
-  width: auto;
-  height: auto;
+  width: 100%;
   pointer-events: none;
   -o-object-fit: cover;
      object-fit: cover;
@@ -509,7 +508,7 @@ button {
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
-@media (max-width: 481px) {
+@media (max-width: 600px) {
   .header__logo span {
     font-size: 1rem;
   }
