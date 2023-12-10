@@ -31,7 +31,8 @@ a {
 }
 
 img {
-  width: 100%;
+  width: auto;
+  height: auto;
   pointer-events: none;
   -o-object-fit: cover;
      object-fit: cover;
