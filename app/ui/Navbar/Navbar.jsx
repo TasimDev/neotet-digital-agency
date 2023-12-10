@@ -34,7 +34,7 @@ const Navbar = () => {
         };
     }, [lastScrollTop]);
 
-    const handleToggle = () => {
+    const handleToggleMenu = () => {
         const headerMenu = document.querySelector('#header-menu');
         const headerBtn = document.querySelector('#header-btn');
         const headerNav = document.querySelector('#header');
@@ -77,7 +77,7 @@ const Navbar = () => {
                 </Link>
 
                 {/* <!--Mobile and Tablet Media--> */}
-                <div className="header__button-mobile" id="header-btn" onClick={handleToggle}>
+                <div className="header__button-mobile" id="header-btn" onClick={handleToggleMenu}>
                     <span className="line"></span>
                     <span className="line"></span>
                 </div>

@@ -12,6 +12,22 @@ const links = [
 ];
 const NavLinksMobile = () => {
     const pathname = usePathname();
+
+    const handleToggle = () => {
+        const headerMenu = document.querySelector('#header-menu');
+        const headerBtn = document.querySelector('#header-btn');
+        const headerNav = document.querySelector('#header');
+        const headerListItem = document.querySelectorAll('.header_list-item');
+
+        headerListItem.forEach((item) => {
+            item.addEventListener('click', () => {
+                headerMenu.classList.toggle('active');
+                headerBtn.classList.toggle('active');
+                headerNav.classList.toggle('active');
+            });
+        });
+    }
+    
     return (
         <>
             {
@@ -23,6 +39,7 @@ const NavLinksMobile = () => {
                                 href={link.href}
                                 title={link.title}
                                 className='header_list-item'
+                                onClick={handleToggle}
                             >{link.name}</Link>
                         </li>
                     )
