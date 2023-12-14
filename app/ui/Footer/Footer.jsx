@@ -19,7 +19,7 @@ const Footer = () => {
                             <Link href="/contact" title="Contact with our Company, Neotet | Digital Agency">Get a quote</Link>
                         </li>
                         <li className="place">
-                            <p>Ruse, Ruse, Bulgaria 7000</p>
+                            <p title="Where we are from, Neotet | Digital Agency">Ruse, Ruse, Bulgaria 7000</p>
                         </li>
                     </ul>
                 </div>
