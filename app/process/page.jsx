@@ -21,7 +21,7 @@ export default function Page() {
                         </p>
                     </div>
                     <div className="image">
-                        <img src="/team/test-proccess-1.jpg" alt="developer/img" />
+                        <img src="/team/krakenimages-Y5bvRlcCx8k-unsplash.jpg" alt="developer/img" />
                     </div>
                 </div>
             </div>
