@@ -9,6 +9,7 @@ import { useState, useEffect } from 'react';
 const Navbar = () => {
     const [isMenuActive, setMenuActive] = useState(false);
     const [isServicesMenuActive, setServicesMenuActive] = useState(false);
+    const [isSticky, setSticky] = useState(false);
 
     const headerBtnClick = () => {
         setMenuActive(!isMenuActive);
@@ -30,6 +31,7 @@ const Navbar = () => {
     const handleScroll = () => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         updateHeader(scrollTop);
+        setSticky(scrollTop > 100);
     };
 
     const updateHeader = (scrollTop, isMouseOver = false) => {
@@ -38,13 +40,12 @@ const Navbar = () => {
 
         if (scrollTop > 100 || isMouseOver) {
             headerNav.classList.add('sticky');
-            headerLogo.setAttribute('src', 'assets/images/logo/neotet-white-logo.png');
+            headerLogo.setAttribute('src', '/logo/neotet-white-logo.png');
         } else {
             headerNav.classList.remove('sticky');
-            headerLogo.setAttribute('src', 'assets/images/logo/neotet-logo.png');
+            headerLogo.setAttribute('src', '/logo/neotet-logo.png');
         }
     };
-
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
@@ -53,12 +54,13 @@ const Navbar = () => {
         };
     }, []);
 
+    const logoSrc = isSticky ? '/logo/neotet-white-logo.png' : '/logo/neotet-logo.png';
     return (
         <nav>
             <header className={`header ${isMenuActive ? 'active' : ''}`} id="header">
-                <div className="container header__container flex">
-                    <Link href="/" className="header__logo flex">
-                        <Image src="/logo/neotet-logo.png" width={110} height={50} alt="Logo for Neotet Digital Agency" id="logo" />
+                <div className="container header__container flex" >
+                    <Link href="/" className="header__logo flex" onClick={serviceCloseClick}>
+                        <Image src={logoSrc} width={110} height={50} alt="Logo for Neotet Digital Agency" id="logo" />
                         <span>NEOTET</span>
                     </Link>
 
