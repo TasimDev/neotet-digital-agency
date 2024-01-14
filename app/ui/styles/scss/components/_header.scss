@@ -1,23 +1,46 @@
 /*==============HEADER=============*/
 .header {
-    img {
-        width: auto;
-        height: auto;
-    }
-
-    padding: 16px;
+    padding: 16px 0px;
     width: 100%;
     height: auto;
-    background: color(white);
+    background: transparent;
     position: fixed;
     top: 0;
     transition: var(--transition);
     z-index: 6;
 
+    &.sticky{
+        background: color(black);
+        .header__logo{
+            color: color(white);
+        }
+        .header__menu {
+            #service-link,.links{
+                color: color(white);
+            }
+            .list-item{
+                &::after{
+                    background: color(white);
+                }
+            }
+        }
+        .contact-btn{
+            color: color(white);
+            .icon{
+
+                background: color(white);
+                color: color(black);
+            }
+        }
+        .header__button-mobile {
+            .line{
+                background: color(white);
+            }
+        }
+    }
     &__container {
         justify-content: space-between;
     }
-
     &__logo {
         position: relative;
         cursor: pointer;
@@ -26,8 +49,10 @@
         font-family: var(--logo-font);
         overflow: hidden;
         padding: 12px 0;
-        width: fit-content;
-
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
         span {
             font-weight: 800;
             transition: var(--transition);
@@ -38,11 +63,6 @@
             width: 50px;
             transform: translateY(200%);
             transition: var(--transition);
-
-            img {
-                width: auto;
-                height: auto;
-            }
         }
 
         &:hover {
@@ -55,24 +75,27 @@
             }
         }
     }
-
+ .div{
+    display: flex;
+    gap: 3rem;
+}
     &__menu {
+        width: 50%;
         gap: 3rem;
-
-        a {
+        .service-links,a {
             color: color(text-black);
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
         }
-
+      
         li {
-
             padding: 8px 3px;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
-
-
+           
             &::after {
                 content: '';
                 width: 0%;
@@ -94,17 +117,13 @@
     }
 
     &__button {
-        background: color(black);
-        color: color(white);
-        font-family: var(--body-font);
-        font-size: 1rem;
-        font-weight: 600;
-        transition: var(--transition);
-
-        &:hover {
-            background: color(white);
+           width: 25%;
             color: color(black);
-        }
+            font-weight: 700;
+          padding-left: 170px;
+        
+            
+           
     }
 
     /*Mobile and Table CSS*/
@@ -153,10 +172,11 @@
         transition: var(--transition);
 
         li {
-            a {
+            .service-links,a {
                 color: color(white);
                 font-size: 1.3rem;
                 font-weight: 600;
+                cursor: pointer;
             }
         }
 
@@ -168,11 +188,81 @@
                 color: color(text-gray);
             }
         }
+     
     }
-
     &__menu-mobile.active {
         transform: translateY(0);
         opacity: 1;
     }
-
 }
+#service-menu{
+    position: fixed;
+    top: 0;
+    right: -200%;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    backdrop-filter: blur(10px);
+    transition: all .3s ease-in-out;
+
+    &.active{
+        right: 0;
+    }
+    .wrapper{
+        background: color(white);
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: -39px 0px 141px 0px rgba(0, 0, 0, 0.363);
+        
+
+        .container{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+           justify-content: center;
+            gap: 2rem;
+            position: relative;
+            header{
+                font-size: 1.1rem;
+                p{
+                    margin-top: 1rem;
+                    color: color(text-gray);
+                }
+            }
+            ul{
+               
+                li{
+                   margin-bottom: 1rem;
+                    a{
+                        font-size: 1.2rem;
+                        color: color(text-gray);
+                        font-weight: 600;
+                        transition: all .3s ease-in-out;
+                    }
+                    &:hover{
+                        a{
+                            color: color(black);
+
+                        }
+                    }
+                  
+                }
+            }
+            #close-service-menu{
+                position: absolute;
+                right: 3%;
+                top: 15%;
+                font-size: 1.6rem;
+                cursor: pointer;
+                color: color(black);
+            }
+        }
+    }
+}
+

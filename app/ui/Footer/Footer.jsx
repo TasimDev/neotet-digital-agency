@@ -1,10 +1,10 @@
-import Link from "next/link"
 import FooterLink from "./footer-link"
+
 
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer id="footer">
             <div className="container footer__container">
                 <div className="footer__top">
                     <span>Are you ready?</span>
@@ -12,18 +12,35 @@ const Footer = () => {
                 </div>
                 <div className="footer__center">
                     <ul className="footer-list">
-                        <li className="email">
-                            <Link href="mailto:neotet.co@gmail.com" rel="noopener noreferrer" title='Drop a message to Neotet | Digital Agency'>neotet.co@gmail.com</Link>
+                        <li className="services">
+                            <header><h2>Services</h2></header>
+                            <a href="#">Websites</a>
+                            <a href="#">Web Apps</a>
+                            <a href="#">E-Commerce</a>
+                            <a href="#">Social Media Marketing</a>
                         </li>
-                        <li className="quote">
-                            <Link href="/contact" title="Contact with our Company, Neotet | Digital Agency">Get a quote</Link>
+                        <li className="about">
+                            <header><h2>Neotet</h2></header>
+                            <a href="#">About</a>
+                            <a href="#">Our Team</a>
+                            <a href="#">Careers</a>
+                            <a href="#">Contact us</a>
                         </li>
-                        <li className="place">
-                            <p title="Where we are from, Neotet | Digital Agency">Ruse, Ruse, Bulgaria 7000</p>
+                        <li className="contact">
+                            <header><h2>Find us</h2></header>
+                            <div className="email">
+                                <a href="mailto:neotet.co@gmail.com">hello@neotet.co</a>
+                            </div>
+                            <div className="place">
+                                <p> Ruse, Bulgaria </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
                 <div className="footer__socials">
+                    <div>
+                        <p>Copyright &copy NEOTET, 2024. All rights reserved.</p>
+                    </div>
                     <ul className="socials">
                         <FooterLink />
                     </ul>

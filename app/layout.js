@@ -2,7 +2,6 @@
 import '@/app/ui/styles/style.css';
 import Navbar from './ui/Navbar/Navbar';
 import Footer from './ui/Footer/Footer';
-import { raleway } from '@/app/ui/fonts';
 
 export const metadata = {
   title: 'Neotet | Digital Agency',
@@ -12,13 +11,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-   
-      <body className={`${raleway.className} antialiased`}>
+      <body>
         <Navbar />
         {children}
         <Footer />
       </body>
-
-    </html>
+    </html >
   )
 }

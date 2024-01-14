@@ -58,6 +58,11 @@
         }
     }
 
+    .home {
+        &__title {
+            width: 90%;
+        }
+    }
     .proccess {
         &__proccesing {
             .container {
@@ -76,16 +81,325 @@
             }
         }
     }
-
-
+    #contact{
+        .container{
+            .wrapper{
+                width: 80%;
+            }
+        }
+        
+    }
+    #contact-page{
+        #contact-names{
+            .container{
+                header{
+                    width: 100%;
+                    
+                }
+               ul{
+                    width: 100%;
+                }
+                .first,.second{
+                    flex-direction: column;
+                    
+                }
+            }
+        }
+    }
+    #service-menu{
+        .wrapper{
+            width: 100%;
+        }
+    }
 }
-
+@media screen and (max-width: 900px){
+    #about{
+       .container{
+        p{
+            width: 100%;
+            font-size: 1.5rem;
+            line-height: 2.8rem;
+          
+        }
+        .neotet{
+            padding: 2px 18px;
+        }
+      
+       }
+    }
+    #quote{
+        header{
+            .title{
+                width: 40%;
+            }
+            .text{
+                width: 60%;
+            }
+        }
+    }
+    #services{
+        .container{
+            main{
+                ul{
+                    li{
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: center;
+                        gap: 2rem;
+                        header{
+                            width: 100%;
+                        }
+                        main{
+                            width: 100%;
+                        }
+                        button{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #footer{
+        .footer__container{
+            .footer__center{
+                flex-direction: column;
+            }
+            .footer__socials{
+               flex-direction: column-reverse;
+               gap: 3rem;
+               text-align: center;
+               p{
+                font-size: .8rem;
+               }
+            }
+        }
+    }
+    #contact-page{
+        .container{
+            header{
+                .header-title{
+                    p{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+        #contact-info{
+            .container{
+                flex-direction: column;
+                gap: 3rem;
+    
+                header{
+                    width: 100%;
+                }
+                
+               form{
+                    width: 100%;
+                }
+            }
+        }
+       
+            #contact-names{
+                .container{
+                    gap: 5rem;
+                    header{
+                        width: 100%;
+                        h2{
+                           
+                            font-size: 2.4rem;
+                        }  
+                    }
+                   ul{
+                        width: 100%;
+                      gap: 2rem;
+                        li{
+                            gap: .4rem;
+                            p{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                    .first,.second{
+                        flex-direction: column;
+                        gap: 2rem;
+                        header{
+                            font-size: 1.1rem;
+                        }
+                    }
+                    .second{
+                      ul{
+                   li{
+                    gap:2rem;
+                   }
+                      }
+                        header{
+                            a{
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        
+    
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .home {
+        &__title {
+            width:90%;
+            h1{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+            .text-gray{
+                font-size: 1.1rem;
+            }
+        }
+    }
+    #image{
+        background-position: top;
+    }
+    #about{
+.container{
+    justify-content: start;
+    align-items: start;
+    p{
+        text-align: left;
+    }
+}
+    }
+    #quote{
+        header{
+            flex-direction: column;
+            .title{
+                padding: 1.1rem 0;
+                width: 100%;
+                font-size: 1rem;
+            }
+            .text{
+                padding: 1.1rem 0;
+                width: 100%;
+                font-size: 2.3rem;
+            }
+        }
+    }
+   
+    #contact{
+        .container{
+            .wrapper{
+                width: 100%;
+            }
+        }
+    }
+    #footer{
+        .footer__container{
+            .footer__center{
+                .footer-list{
+                    flex-direction: column;
+                    gap: 3rem;
+                    li{
+                        width: 100%;
+                       
+                    }
+                }
+            }
+            .footer__socials{
+               flex-direction: column-reverse;
+               gap: 3rem;
+               text-align: center;
+            }
+        }
+    }
+    #contact-page{
+        .container{
+            header{
+               
+                .images{
+                    .profile{
+                        width: 60px;
+                        height: 60px;
+                        &:last-child{
+                            top: 0;
+                            left:42px;
+                        }
+                    }
+                }
+                .header-title{
+                    h2{
+                        font-size: 2rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        #contact-info{
+            .container{
+                header{
+                    
+                    h2{
+                        font-size: 2rem;
+                        
+                    }
+                }
+            }
+        }
+        #contact-names{
+            .container{
+                ul{flex-direction: column;}
+                .second{
+                    ul{
+                        gap: 4rem;
+                    }
+                }
+            }
+        }
+    }
+    #about-page{
+        main{
+           
+            .container{
+                .team{
+                    .profile{
+                        .department{
+                            width: 30%;
+                        }
+                        .profile-info{
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+        #quote{
+            header{
+                flex-direction: column;
+                .title{
+                    padding: 1.1rem 0;
+                    width: 100%;
+                    font-size: 1rem;
+                }
+                .text{
+                    padding: 1.1rem 0;
+                    width: 100%;
+                    font-size: 2.3rem;
+                }
+            }
+        }
+    }
+}
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
 
-@media (max-width: 600px) {
+@media (max-width: 481px) {
     .header {
         &__logo {
             span {
@@ -106,26 +420,6 @@
             }
         }
 
-    }
-
-    .footer {
-        &__center {
-            .footer-list {
-                gap: 3rem;
-                flex-direction: column;
-            }
-        }
-
-        &__socials {
-            .socials {
-                width: 100%;
-
-                li {
-                    width: 40px;
-                    height: 40px;
-                }
-            }
-        }
     }
 
     .home {

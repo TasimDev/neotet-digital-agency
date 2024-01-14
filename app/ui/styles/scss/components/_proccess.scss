@@ -1,9 +1,6 @@
 /*==============Proccess================*/
 
 .proccess {
-    img {
-        width: 100%;
-    }
 
     span {
         display: block;
@@ -21,7 +18,7 @@
     &__title {
         padding: 16rem 16px;
         font-size: 1.6rem;
-
+        font-family: var(--header-font);
 
     }
 
@@ -40,6 +37,7 @@
 
                 h2 {
                     margin-bottom: 16px;
+                    font-family: var(--header-font);
                 }
 
                 p {
@@ -54,9 +52,8 @@
                 position: absolute;
                 width: 369px;
                 height: auto;
-                top: -33.3%;
+                top: -25%;
                 right: 0;
-
             }
         }
     }
@@ -103,6 +100,7 @@
                         font-size: 3rem;
                         font-weight: 700;
                         margin-bottom: 2rem;
+                        font-family: var(--header-font);
                     }
 
                     p {

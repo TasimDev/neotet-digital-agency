@@ -1,0 +1,184 @@
+#contact-page{
+    .container{
+        header{
+            padding: 12rem 0rem 6rem 0rem;
+            display: flex;
+            flex-direction: column;
+           gap: 6rem;
+            .images{
+                position: relative;
+                .profile{
+                    width: 69px;
+                    height: 69px;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    border: 4px solid color(white);
+                    position: absolute;
+                    img{
+                        border-radius: 50%;
+                    }
+                    &:last-child{
+                        top: 0;
+                        left: 50px;
+                    }
+                }
+            }
+            .header-title{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                h2{
+                    font-size: 3rem;
+                    font-weight: 800;
+                    font-family: var(--header-font);
+                }
+                p{
+                    width: 50%;
+                    font-size: 1.2rem;
+                    color: color(text-gray)
+                }
+            }
+        }
+    }
+    #contact-info{
+        border-top: 1px solid rgb(214, 214, 214);
+        padding: 6rem 0rem 3rem 0rem;
+     
+        .container{
+            display: flex;
+            justify-content: space-between;
+         
+            header{
+                padding: 0;
+             width: 50%;
+                h2{
+                    
+                    font-size: 3rem;
+                    font-weight: 800;
+                    font-family: var(--header-font);
+                }
+            }
+            form{
+           width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                .info{
+                    display: flex;
+                    justify-content: space-between;
+                    .label{
+                        width: 45%;
+                    }
+                    
+                }
+                .label{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                    label{
+                        font-size: 1.1rem;
+                    }
+                    input{
+                        padding: .6rem;
+                        width: 100%;
+                        background: none;
+                        border: none;
+                        border-bottom: 1px solid color(black);
+                        outline: none;
+                    
+                        &:focus{
+                            transition: all .3s ease-in;
+                            border-bottom: 2px solid color(black)
+                        }
+
+                    }
+                  
+                    
+                }
+                .btn-submit{
+                    width: 36%;
+                    padding: .8rem;
+                    font-size: 1.2rem;
+                    background: color(black);
+                    border: none;
+                    color: color(white);
+                    border-radius: 70px;
+                  
+                }
+                textarea{
+                    border: none;
+                    border-bottom: 1px solid color(black);
+                    resize: vertical;
+                    outline: none;
+                    &:focus{
+                        transition: all .3s ease-in;
+                        border: 2px solid color(black);
+                    }
+                }
+
+            }
+            
+        }
+
+    }
+    #contact-names{
+        background: rgb(149,255,124);
+        background: linear-gradient(180deg, rgba(149,255,124,1) 0%, rgba(240,241,0,1) 100%);
+        padding: 6rem 0rem;
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 10rem;
+            
+            header{
+                padding: 0;
+                width: 30%;
+                h2{
+                    font-family: var(--header-font);
+                    font-size: 2.6rem;
+                }
+            }
+            ul{
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+                gap: 7rem;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    header{
+                        width: 100%;
+                    }
+                }
+            }
+            .first,.second{
+                display: flex;
+                gap: 3rem;
+                header{
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color:color(black);
+                }
+                main{
+                    color: color(grey);
+                }
+            }
+            .second{
+                header{
+                    a{
+                        font-size: 2rem;
+                        color: color(white);
+                        background: color(black);
+                        text-align: center;
+                        padding: .5rem;
+                        border-radius: 70px;
+                    }
+                }
+                main{
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

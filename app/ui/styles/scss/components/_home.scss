@@ -3,27 +3,196 @@
     width: 100%;
     height: 100vh;
     position: relative;
-
+    text-align: left;
+    
     &__title {
         width: 100%;
-        text-align: center;
-
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
         h1 {
             font-size: 3rem;
             font-weight: 800;
             line-height: 4rem;
             margin-bottom: 16px;
+           font-family: var(--header-font);
+           color: color(black);
+           
+        }
 
-            .thin {
-                font-weight: 200;
+       
+        p{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+           
+            color: rgba(0, 0, 0, 0.781);
+            font-weight: 300;
+        }
+
+    }
+}
+#image{
+
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.text-gray {
+    font-size: 1.3rem;
+    color: color(gray);
+    font-family: var(--header-font);
+}
+#about{
+    width: 100%;
+   padding: 6rem 0rem;
+    background: #FBFBFB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        .text-gray{
+            font-size: 1rem;
+        }
+        p{
+            font-size: 2rem;
+            width: 60%;
+            line-height: 3.3rem;
+            font-weight: 600;
+            word-spacing: .2rem;
+        }
+        a{
+            color: color(black);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+      
+    }
+}
+#quote{
+    width: 100%;
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        border-top: 1px solid color(black);
+        border-bottom: 1px solid color(black);
+        overflow: hidden;
+        .title{
+            width: 30%;
+            height: 100%;
+            padding: 1.65rem 0rem;
+            text-align: center;
+            background: color(black);
+            color: color(white);
+            font-family: var(--header-font);
+            z-index: 1;
+        }
+        .text{
+            
+            width: 70%;
+            font-size: 2.7rem;
+            white-space: nowrap;
+            font-family: var(--header-font);
+            font-weight: 800;
+            -webkit-text-stroke: 2px color(black);
+            color: transparent;
+            animation: animate 120s linear infinite;
+            initial-letter: 600px;
+            @keyframes animate {
+                0% {
+                    transform: translateX(0);
+                }
+    
+                100% {
+                    transform: translate(-600%);
+                }
             }
         }
-
-        .text-gray {
-            font-size: 1.3rem;
-            color: color(gray);
+    }
+}
+#contact{
+    padding: 12rem 0rem;
+    background: rgb(149,255,124);
+    background: linear-gradient(180deg, rgba(149,255,124,1) 0%, rgba(240,241,0,1) 100%);
+        
+    .container{
+            .wrapper{
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+                width: 50%;
+                header{
+                    font-size: 2.3rem;
+                    font-family: var(--header-font);
+                }
+                a{
+                    font-size: 1.1rem;
+                    color: color(black);
+                    font-weight: 500;
+                        
+                }
+            }
         }
-
-
+}
+#services{
+    padding: 3rem 2rem;
+    .container{
+        display: flex;
+        align-items: center;
+       flex-direction: column;
+       gap: 6rem;
+      main{
+        width: 100%;
+        
+      }
+      ul{
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+        li{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(230, 230, 230);
+            align-items: center;
+            padding-bottom: 2rem;
+            &:last-child{
+                border: none;
+            }
+           gap: 6rem;
+            header{
+                width: 25%;
+                font-family: var(--header-font);
+            }
+            main{
+                width: 50%;
+            }
+            button{
+                cursor: pointer;
+                width: 25%;
+                .btn{
+                    color: color(black);
+                    font-weight: 500;
+                    font-size: 1.1rem;
+                    display: flex;
+                    span{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+      }
+       
     }
 }
