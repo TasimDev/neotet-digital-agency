@@ -86,7 +86,7 @@ const Navbar = () => {
                     </div>
 
                     <ul className={`header__menu-mobile flex ${isMenuActive ? 'active' : ''}`} id="header-menu">
-                        <li><span title="Learn more about Services to our comoany, Neotet - Digital Agency." class="service-links" onClick={serviceLinkClick}>Services</span></li>
+                        <li><span title="Learn more about Services to our comoany, Neotet - Digital Agency." className="service-links" onClick={serviceLinkClick}>Services</span></li>
                         <li><Link href='/projects' title='Projects created by Neotet - Digital Agency' onClick={headerBtnClick} >Projects</Link></li>
                         <li><Link href='/process' title='Learn more about the process, and how we work with our clients of out company, Neotet - Digital Agency' onClick={headerBtnClick} >Process</Link></li>
                         <li><Link href='/about' title='Learn more about our company, Neotet - Digital Agency' onClick={headerBtnClick} >About</Link></li>
