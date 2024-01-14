@@ -8,25 +8,29 @@ export const metadata = {
     template: '%s | NEOTET ',
     default: 'NEOTET | Digital Agency'
   },
-  description: 'We make new generation web products to determine the future',
+  description: 'We are NEOTET, that we make awesome new generation web products to determine your future.',
   metadataBase: new URL('https://neotet.co'),
   keywords: ['Websites', 'Web Apps', 'E-Commerce', 'SMM', 'Digital Marketing', 'SaaS'],
   authors: [{ name: 'NEOTET Team' }],
-  creator: 'Tasim Tasim',
   alternates: {
     canonical: '/',
     languages: {
       'en-US': '/en-US',
     },
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
     icon: '/favicon.png',
     shortcut: '/favicon.png',
     apple: '/favicon.png',
+    type: "image/png"
   },
   openGraph: {
     title: 'NNEOTET | Digital Agency',
-    description: 'We make new generation web products to determine the future',
+    description: 'We are NEOTET, that we make awesome new generation web products to determine your future.',
     url: 'https://neotet.co',
     siteName: 'NEOTET',
     images: [
